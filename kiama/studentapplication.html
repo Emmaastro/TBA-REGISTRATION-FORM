@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Training Application</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        <img src="https://www.tba.go.tz/site/images/coat.png
+        " alt="Left Logo" class="logo logo-left">
+        <img style="float: right;" src="https://www.tba.go.tz/site/images/logo.png
+        " alt="Right Logo" class="logo logo-right">
+       
+        <h1>TBA Student Training Application Form</h1>
+        
+    </div>
+
+    
+    <form action="datainsertion.php" method="post" enctype="multipart/form-data">
+      <!-- Basic Information -->
+      <div class="form-group">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+      </div>
+
+      <!-- Identification and Background -->
+      <div class="form-group">
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" list="country_list" required>
+        <!-- Datalist for country suggestions -->
+        <datalist id="country_list">
+          <option value="United States">
+            <option value="United Kingdom">
+            <option value="Canada">
+            <option value="Australia">
+            <option value="Germany">
+            <option value="France">
+            <option value="Spain">
+            <option value="Italy">
+            <option value="Japan">
+            <option value="China">
+            <option value="India">
+            <option value="Brazil">
+            <option value="Mexico">
+            <option value="South Africa">
+            <option value="Argentina">
+            <option value="Austria">
+            <option value="Belgium">
+            <option value="Chile">
+            <option value="Colombia">
+            <option value="Denmark">
+            <option value="Egypt">
+            <option value="Finland">
+            <option value="Greece">
+            <option value="Hungary">
+            <option value="Iceland">
+            <option value="Ireland">
+            <option value="Israel">
+            <option value="Jamaica">
+            <option value="Kenya">
+            <option value="Malaysia">
+            <option value="Netherlands">
+            <option value="New Zealand">
+            <option value="Norway">
+            <option value="Pakistan">
+            <option value="Philippines">
+            <option value="Poland">
+            <option value="Portugal">
+            <option value="Russia">
+            <option value="Singapore">
+            <option value="South Korea">
+            <option value="Sweden">
+            <option value="Switzerland">
+            <option value="Thailand">
+            <option value="Turkey">
+            <option value="Ukraine">
+            <option value="Vietnam">
+            <option value="Zimbabwe">
+            <!-- Add more country options from Africa -->
+            <option value="Algeria">
+            <option value="Angola">
+            <option value="Botswana">
+            <option value="Burundi">
+            <option value="Cameroon">
+            <option value="Congo (DRC)">
+            <option value="Egypt">
+            <option value="Ethiopia">
+            <option value="Ghana">
+            <option value="Kenya">
+            <option value="Madagascar">
+            <option value="Malawi">
+            <option value="Mali">
+            <option value="Morocco">
+            <option value="Nigeria">
+            <option value="Senegal">
+            <option value="Somalia">
+            <option value="South Africa">
+            <option value="Tanzania">
+            <option value="Uganda">
+            <option value="Zambia">
+            <option value="Zimbabwe">
+            <!-- Add more country options as needed -->
+        </datalist>
+      </div>
+
+      <div class="form-group">
+        <label for="student_id">Student ID (if applicable):</label>
+        <input type="text" id="student_id" name="student_id">
+      </div>
+
+      <div class="form-group">
+        <label for="institution">Current Educational Institution:</label>
+        <input type="text" id="institution" name="institution" required>
+      </div>
+
+      <div class="form-group">
+        <label for="field_of_study">Field of Study or Major:</label>
+        <input type="text" id="field_of_study" name="field_of_study" required>
+      </div>
+
+      <!-- Training Preferences -->
+      <div class="form-group">
+        <label for="training_area">Preferred Training Area or Department:</label>
+        <input type="text" id="training_area" name="training_area" required>
+      </div>
+
+      <div class="form-group">
+        <label for="start_date">Desired Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="duration">Desired Duration of Training:</label>
+        <input type="text" id="duration" name="duration" required>
+      </div>
+
+
+      <!-- Motivation and Goals -->
+      <div class="form-group">
+        <label for="motivation">Motivation for Applying:</label>
+        <textarea id="motivation" name="motivation" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="career_goals">Career Goals and Aspirations:</label>
+        <textarea id="career_goals" name="career_goals" rows="4" required></textarea>
+      </div>
+
+      
+
+      <!-- Consent and Confirmation -->
+      <div class="form-group">
+        <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+        <label for="terms_conditions">I agree to the <a href="#">terms and conditions</a>.</label>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit">Submit Application</button>
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
+
